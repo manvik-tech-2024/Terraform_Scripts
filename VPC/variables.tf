@@ -6,21 +6,21 @@ variable "aws_region" {
   default = "us-east-1"
 }
 variable "vpc_cidr" {
-  default = "172.0.0.0/24"
+  default = "172.31.0.0/16"
 }
 variable "subnets_cidr" {
   type    = list(string)
-  default = ["172.0.0.0/25", "172.0.0.128/25"]
+  default = ["172.31.0.0/17", "172.31.128.0/17"]
 }
 variable "availability_zones" {
   type    = list(string)
-  default = ["ap-south-1a", "ap-south-1b"]
+  default = ["us-east-1a", "us-east-1b"]
 }
 variable "ubuntuami" {
-  default = "ami-0b44050b2d893d5f7"
+  default = "ami-04b4f1a9cf54c11d0"
 }
 variable "redhatami" {
-  default = "ami-052c08d70def0ac62"
+  default = "ami-0c7af5fe939f2677f"
 }
 variable "key_name" {
   default = "devops"
