@@ -22,6 +22,7 @@ variable "ubuntuami" {
 variable "redhatami" {
   default = "ami-0c7af5fe939f2677f"
 }
+# pem file name
 variable "key_name" {
-  default = "devops"
+  default = "MT"
 }
