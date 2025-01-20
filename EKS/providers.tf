@@ -4,6 +4,7 @@
 
 provider "aws" {
   region  = "us-east-1"
+  profile = "terraform"   // custom profile-->Access key & Secret key
 }
 
 # Using these data sources allows the configuration to be
